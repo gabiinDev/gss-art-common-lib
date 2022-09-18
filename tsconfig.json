@@ -20,5 +20,11 @@
     "declaration": true,
     "types": ["vite/client", "node", "jquery"]
   },
-  "include": ["vite.config.*", "env.d.ts", "src/**/*", "src/**/*.vue"]
+  "include": [
+    "vite.config.*",
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "index.d.ts"
+  ]
 }
