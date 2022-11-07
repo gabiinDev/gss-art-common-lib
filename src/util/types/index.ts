@@ -1,0 +1,1 @@
+export type Something = "SOMETHING_1" | "SOMETHING_2" | "SOMETHING_3"

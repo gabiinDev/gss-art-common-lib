@@ -1,18 +1,23 @@
 {
-  "name": "gss-art-common-lib",
-  "version": "0.0.3",
+  "name": "@vite-lib-ts-base/my-test-lib",
+  "version": "0.0.0",
   "files": [
     "dist"
   ],
-  "main": "./dist/gss-art-common-lib.umd.js",
-  "module": "./dist/gss-art-common-lib.es.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/gss-art-common-lib.es.js",
-      "require": "./dist/gss-art-common-lib.umd.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./*": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
-  "types": "./dist/src/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --emitDeclarationOnly && vite build",
@@ -21,18 +26,16 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "lodash": "^4.17.21",
     "vue": "^3.2.20"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.14",
     "@types/node": "^16.11.9",
+    "@vite-lib-ts-base/my-test-lib": "file:vite-lib-ts-base-my-test-lib-0.0.0.tgz",
     "@vitejs/plugin-vue": "^1.9.3",
+    "rollup-plugin-typescript2": "^0.34.0",
     "typescript": "~4.3.5",
     "vite": "^2.6.3",
-    "vue-tsc": "^0.29.5",
-    "rollup-plugin-typescript2": "^0.34.0",
-    "vite-plugin-dts": "^1.5.0"
+    "vite-plugin-dts": "^1.5.0",
+    "vue-tsc": "^0.29.5"
   }
 }

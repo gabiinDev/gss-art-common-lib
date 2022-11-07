@@ -1,1 +1,0 @@
-declare module "gss-art-common-lib";

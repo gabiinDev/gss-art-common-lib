@@ -18,13 +18,7 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "declaration": true,
-    "types": ["vite/client", "node", "jquery"]
+    "types": ["vite/client", "node"]
   },
-  "include": [
-    "vite.config.*",
-    "env.d.ts",
-    "src/**/*",
-    "src/**/*.vue",
-    "index.d.ts"
-  ]
+  "include": ["src/**/*", "src/**/*.vue"]
 }
